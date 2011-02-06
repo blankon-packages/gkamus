@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=gKamus
+Comment=English - Indonesia Dictionary
+Comment[id]=Kamus Bahasa Inggris - Indonesia
+Exec=gkamus
+Icon=gkamus
+Terminal=false
+Type=Application
+Categories=Education;Language;
+StartupNotify=true
+Terminal=false

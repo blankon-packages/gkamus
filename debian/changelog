@@ -1,0 +1,11 @@
+gkamus (0.3-1+0blankon1) pattimura; urgency=low
+
+  * Initial release to Blankon, no source changes
+
+ -- Mahyuddin Susanto <udienz@ubuntu.com>  Mon, 07 Feb 2011 01:35:48 +0700
+
+gkamus (0.3-1) natty; urgency=low
+
+  * Initial release. (LP: #705788)
+
+ -- Mahyuddin Susanto <udienz@ubuntu.com>  Fri, 04 Feb 2011 10:37:08 +0700
