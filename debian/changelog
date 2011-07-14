@@ -1,3 +1,9 @@
+gkamus (1.0-0blankon1) pattimura; urgency=low
+
+  * New Upstream release
+  
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Fri, 15 Jul 2011 00:20:31 +0700
+
 gkamus (0.3-1+0blankon2) pattimura; urgency=low
 
   * Initial release to BlankOn, no source changes
