@@ -1,3 +1,24 @@
+gkamus (1.0-0.1ubuntu1+blankon1) rote; urgency=low
+
+  * Fakesync from Ubuntu, please sync from Ubuntu for next release 
+
+ -- Mahyuddin Susanto <udienz@ubuntu.com>  Wed, 04 Jan 2012 11:31:32 +0700
+
+gkamus (1.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release.
+  * Drop 01_fix-doc-pkg.patch, instead use debhelper to install files to
+    correct location.
+  * Split architecture-independent data to gkamus-data package. Drop previous
+    hack of installing this data in /usr/lib.
+  * Update build dependencies according to configure.in.
+  * Update package descriptions.
+  * Update copyright file.
+  * Refresh 02_desktop_file.patch.
+  * Drop unnecessary overrides from debian/rules.
+
+ -- Ilya Barygin <randomaction@ubuntu.com>  Sun, 20 Nov 2011 13:10:06 +0400
+
 gkamus (1.0-0blankon1) pattimura; urgency=low
 
   * New Upstream release
@@ -26,3 +47,21 @@ gkamus (0.3-1) natty; urgency=low
   * Initial release. (LP: #705788)
 
  -- Mahyuddin Susanto <udienz@ubuntu.com>  Fri, 04 Feb 2011 10:37:08 +0700
+
+gkamus (0.3-0ubuntu2) oneiric; urgency=low
+
+  * Fix FTBFS because incomplete architecture rules when build (LP: #790101)
+    - debian/rules
+    - debian/dirs
+  * debian/control:
+    - Bumped debhelper version to >= 7.0.50~.
+    - Fix typos in Package description.
+
+ -- Mahyuddin Susanto <udienz@ubuntu.com>  Mon, 30 May 2011 19:32:06 +0700
+
+gkamus (0.3-0ubuntu1) oneiric; urgency=low
+
+  * Initial release. (LP: #705788)
+
+ -- Mahyuddin Susanto <udienz@ubuntu.com>  Fri, 06 May 2011 15:46:37 +0700
+
