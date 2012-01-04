@@ -1,25 +1,46 @@
 Source: gkamus
 Section: utils
 Priority: optional
-Maintainer: BlankOn Developers <BlankOn-Dev@googlegroups.com>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Mahyuddin Susanto <udienz@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~),
-		autotools-dev, 
-		libgtk2.0-dev | libgtk3.0-dev,
-		libtool,
-		cdbs,
-		quilt
-Standards-Version: 3.9.1
+               libgtk2.0-dev (>= 2.18.9),
+               libglib2.0-dev (>= 2.22.5),
+Standards-Version: 3.9.2
 Homepage: http://gkamus.sourceforge.net/
-Vcs-Bzr: lp:gkamus
-Vcs-Browser: https://code.launchpad.net/~garuda-id/gkamus/ubuntu
 
 Package: gkamus
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, gkamus-data (= ${source:Version})
 Description: Indonesian English dictionary
- Indonesian English dictionary that contain 23000 words and definitions.
- Smiliar to gidic or Linguist.
+ Indonesian English dictionary that contains 23000 words and definitions,
+ similar to gidic or Linguist.
  .
- Allowing users to adding more words/definitions or edtting words/definitions
- that exist in database
+ It allows users to add more words/definitions or to edit words/definitions
+ that exist in database.
 
+Package: gkamus-data
+Architecture: all
+Depends: ${misc:Depends}
+Description: Indonesian English dictionary - data files
+ Indonesian English dictionary that contains 23000 words and definitions,
+ similar to gidic or Linguist.
+ .
+ It allows users to add more words/definitions or to edit words/definitions
+ that exist in database.
+ .
+ This package contains data files.
+
+Package: gkamus-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: gkamus (= ${binary:Version}), ${misc:Depends}
+Description: gkamus Indonesian English dictionary - debug symbols
+ Indonesian English dictionary that contains 23000 words and definitions,
+ similar to gidic or Linguist.
+ .
+ It allows users to add more words/definitions or to edit words/definitions
+ that exist in database.
+ .
+ This package contains the debugging symbols.
