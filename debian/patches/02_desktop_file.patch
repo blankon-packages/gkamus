@@ -1,0 +1,22 @@
+Description: Fix desktop files to meet freedesktop standard policy
+Author: Mahyuddin Susanto <udienz@ubuntu.com>
+
+--- gkamus-1.0.orig/gkamus.desktop.in
++++ gkamus-1.0/gkamus.desktop.in
+@@ -1,11 +1,11 @@
+ [Desktop Entry]
+ Version=1.0
+ Name=gKamus
+-Comment=Simple English - Indonesian dictionary
+-Exec=@prefix@/bin/gkamus
+-Icon=@prefix@/share/pixmaps/gkamus.png
+-Terminal=false
++Comment=English - Indonesian dictionary
++Comment[id]=Kamus Bahasa Inggris - Indonesia
++Exec=gkamus
++Icon=gkamus
+ Type=Application
+-Categories=Application;Utility
++Categories=Office;TextTools;Utility;Dictionary;
+ StartupNotify=true
+ Terminal=false
