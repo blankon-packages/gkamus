@@ -4,7 +4,7 @@
 	dh $@
 
 override_dh_install:
-	dh_install -XCOPYING -XChangeLog -XINSTALL
+	dh_installdocs -XCOPYING -XChangeLog -XINSTALL
 
 override_dh_installchangelogs:
 	dh_installchangelogs ChangeLog
