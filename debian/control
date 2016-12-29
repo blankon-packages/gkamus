@@ -6,6 +6,7 @@ XSBC-Original-Maintainer: Mahyuddin Susanto <udienz@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~),
                libgtk2.0-dev (>= 2.18.9),
                libglib2.0-dev (>= 2.22.5),
+               autotools-dev
 Standards-Version: 3.9.2
 Homepage: http://gkamus.sourceforge.net/
 
